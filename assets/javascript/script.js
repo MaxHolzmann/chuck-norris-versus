@@ -23,8 +23,6 @@ displayJoke()
 const displayJoke = (chuck, dad) => {
     let chuckJoke = document.getElementById('chuck-joke');
     let dadJoke = document.getElementById('dad-joke');
-    chuck = "test";
-    dad = "test2"
 
     chuckJoke.textContent = chuck;
     dadJoke.textContent = dad;
