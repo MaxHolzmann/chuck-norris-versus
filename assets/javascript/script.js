@@ -14,6 +14,6 @@ On the document load:
 
 getDadJokes
 getChuckNorris
-displayJoke
+displayJoke()
 
 */
