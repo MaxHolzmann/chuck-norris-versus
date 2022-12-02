@@ -20,10 +20,12 @@ displayJoke()
 
 
 
-const displayJoke = (chuck, dad) => {
+const displayChuckJoke = (joke) => {
     let chuckJoke = document.getElementById('chuck-joke');
-    let dadJoke = document.getElementById('dad-joke');
+    chuckJoke.textContent = joke;
+}
 
-    chuckJoke.textContent = chuck;
-    dadJoke.textContent = dad;
+const displayDadJoke = (joke) => {
+    let dadJoke = document.getElementById('dad-joke');
+    dadJoke.textContent = joke;
 }
