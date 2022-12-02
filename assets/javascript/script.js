@@ -18,6 +18,49 @@ displayJoke()
 
 */
 
+var getDadJokes = function () {
+    var dadApiUrl = 'https://icanhazdadjoke.com/';
+    fetch(dadApiUrl,{
+        headers: {"Accept" : "application/json"},
+        } 
+         )
+    .then(function (response) {
+      
+      if (response.ok) {
+        
+        response.json().then(function (data) {
+           
+           displayDadJoke(data.joke);
+        });
+        
+      } else {
+        alert('Error: ' + response.statusText);
+      }
+    })
+    .catch(function (error) {
+
+      alert('Unable to connect to Dad Jokes');
+    });
+} 
+
+
+var getChuckNorris = function() {
+    var chuckApiUrl= 'https://api.chucknorris.io/jokes/random'
+    fetch(chuckApiUrl)
+    .then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+           displayChuckJoke(data.value);
+        });
+      } else {
+        alert('Error: ' + response.statusText);
+      }
+    })
+    .catch(function (error) {
+      alert('Unable to connect to Chuck Norris');
+    });
+    
+}
 
 
 const displayChuckJoke = (joke) => {
@@ -29,3 +72,6 @@ const displayDadJoke = (joke) => {
     let dadJoke = document.getElementById('dad-joke');
     dadJoke.textContent = joke;
 }
+
+getChuckNorris();
+getDadJokes();
