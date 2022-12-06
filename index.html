@@ -7,18 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="assets/javascript/script.js"></script>
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
-    <header>Chuck Norris v Your Dad</header>
-    <article id="box-container">
+    <header id="header">
+      <h1>Chuck Norris v Your Dad</h1>
+    </header>
+    <article id="box-container" class="container">
         <section id="chuck-norris">
-          <div id="chuck-joke"></div>
-          <button id=chuck-vote>Vote</button>
+          
+            <!-- <div id="chuck-joke" class="row"> -->
+                <div class="col s12 m5">
+                  <div class="card-panel small orange darken-3">
+                    <span id="chuck-joke" class="white-text">
+                  </div>
+                </div>
+              <!-- </div> -->
+        
+          <button id="chuck-vote" class="btn-floating btn-large pulse"><i class="material-icons">check</i></button>
         </section>
         <section id="your-dad">
-            <div id="dad-joke"></div>
-            <button id=dad-vote>Vote</button>
+            
+                <!-- <div id="dad-joke" class="row"> -->
+                    <div class="col s12 m5">
+                      <div class="card-panel small orange darken-3">
+                        <span id="dad-joke" class="white-text">
+                        </span>
+                      </div>
+                    </div>
+                  <!-- </div>
+             -->
+            <button id="dad-vote" class="btn-floating btn-large pulse"><i class="material-icons">check</i></button>
+          </section></button>
         </section>
+
+      <a href="results.html class="btn-floating">Grab your favorite jokes here!</a>
     </article>
 </body>
 </html>
