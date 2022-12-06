@@ -10,7 +10,7 @@ const displayJokesList = () => {
             joke.textContent = localStorage.getItem(i)
             results.appendChild(joke)
         } else {
-            console.log('null??')
+            console.log('null?')
         }
     }
 }
