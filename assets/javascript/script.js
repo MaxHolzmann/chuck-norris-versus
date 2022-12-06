@@ -83,12 +83,14 @@ boxContainer.addEventListener('click', (e) => {
     let clickedButton = e.target;
     if(clickedButton.id === "chuck-vote") {
         localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        localStorage.setItem("chuckJokeCounter", +localStorage.getItem("chuckJokeCounter") + 1)
         getChuckNorris();
         getDadJokes();
     }
 
     if(clickedButton.id === "dad-vote") {  
         localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        localStorage.setItem("dadJokeCounter", +localStorage.getItem("dadJokeCounter") + 1)
         getChuckNorris();
         getDadJokes();
     }
