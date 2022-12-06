@@ -18,6 +18,9 @@ displayJoke()
 
 */
 
+let boxContainer = document.getElementById('box-container');
+
+
 var getDadJokes = function () {
     var dadApiUrl = 'https://icanhazdadjoke.com/';
     fetch(dadApiUrl,{
@@ -44,6 +47,8 @@ var getDadJokes = function () {
 } 
 
 
+
+
 var getChuckNorris = function() {
     var chuckApiUrl= 'https://api.chucknorris.io/jokes/random'
     fetch(chuckApiUrl)
@@ -68,10 +73,28 @@ const displayChuckJoke = (joke) => {
     chuckJoke.textContent = joke;
 }
 
+
 const displayDadJoke = (joke) => {
     let dadJoke = document.getElementById('dad-joke');
     dadJoke.textContent = joke;
 }
+
+boxContainer.addEventListener('click', (e) => {
+    let clickedButton = e.target;
+    if(clickedButton.id === "chuck-vote") {
+        localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        getChuckNorris();
+        getDadJokes();
+    }
+
+    if(clickedButton.id === "dad-vote") {  
+        localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        getChuckNorris();
+        getDadJokes();
+    }
+});
+
+
 
 getChuckNorris();
 getDadJokes();
