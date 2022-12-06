@@ -85,14 +85,15 @@ const displayDadJoke = (joke) => {
 }
 
 boxContainer.addEventListener('click', (e) => {
+    console.log(e.target)
     let clickedButton = e.target;
     if(clickedButton.id === "chuck-vote") {
-        localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        localStorage.setItem(localStorage.length + 1, document.getElementById('chuck-joke').textContent)
         displayJokes();
     }
 
     if(clickedButton.id === "dad-vote") {  
-        localStorage.setItem(localStorage.length + 1, clickedButton.previousElementSibling.textContent)
+        localStorage.setItem(localStorage.length + 1, document.getElementById('dad-joke').textContent)
         displayJokes(); 
     }
 });
