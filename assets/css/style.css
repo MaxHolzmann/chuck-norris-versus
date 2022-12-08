@@ -1,0 +1,15 @@
+
+
+.round-border {
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.saved-joke-text {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.hide-results {
+    display: none;
+}

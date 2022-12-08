@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joke Results</title>
     <script defer src="assets/javascript/results.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+
     <div id="counter-container">
-        <h1>Counter</h1>
     </div>
 
-    <div id="results"></div>
+    <div id="results-container-full" class="col s10 m7 center-align">
+        <h2 class="header">Saved Jokes</h2>
+        <div class="card horizontal  amber lighten-5  round-border">
+          <div class="card-stacked">
+            <div class="card-content">
+              <p class="saved-joke-text" id="results"></p>
+            </div>
+          </div>
+        </div>
+        <a id="clear-jokes-btn" class="waves-effect waves-light btn-large hoverable amber lighten-5 black-text"><i class="material-icons left">clear</i>Clear Saved Jokes</a>
+      </div>
+
+    <div id="no-jokes-saved" class="container center-align">
+        <h1>You have not saved any jokes!</h1>
+    </div>
+
+
+
 </body>
 </html>
