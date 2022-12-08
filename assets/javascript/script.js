@@ -89,11 +89,15 @@ boxContainer.addEventListener('click', (e) => {
     let clickedButton = e.target;
     if(clickedButton.id === "chuck-vote") {
         localStorage.setItem(localStorage.length + 1, document.getElementById('chuck-joke').textContent)
+        localStorage.setItem("chuckJokeCounter", +localStorage.getItem("chuckJokeCounter") + 1)
+        console.log(localStorage.getItem("chuckJokeCounter"))
         displayJokes();
     }
 
     if(clickedButton.id === "dad-vote") {  
         localStorage.setItem(localStorage.length + 1, document.getElementById('dad-joke').textContent)
+        localStorage.setItem("dadJokeCounter", +localStorage.getItem("dadJokeCounter") + 1)
+        console.log(localStorage.getItem("dadJokeCounter"))
         displayJokes(); 
     }
 });

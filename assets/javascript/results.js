@@ -1,7 +1,8 @@
 // On the document load:
 // - a For loop to loop through local storage and display each item.
 let results = document.getElementById('results')
-let counterContainer = document.getElementById('counter-container');
+let chuckCounterContainer = document.getElementById('chuck-counter-container');
+let dadCounterContainer = document.getElementById('dad-counter-container')
 let clearJokesButton = document.getElementById('clear-jokes-btn');
 let resultsContainerFull = document.getElementById('results-container-full');
 let noJokesSaved = document.getElementById('no-jokes-saved');
@@ -29,7 +30,8 @@ const displayJokesList = () => {
     }
 
     if(localStorage.getItem('chuckJokeCounter')  && localStorage.getItem("dadJokeCounter")) {
-        counterContainer.textContent = "Chuck Norris Jokes: " + localStorage.getItem('chuckJokeCounter') + " versus Dad Jokes: " + localStorage.getItem("dadJokeCounter");
+        chuckCounterContainer.textContent = "Chuck Norris Jokes: " + localStorage.getItem('chuckJokeCounter');
+        dadCounterContainer.textContent = "Dad Jokes: " + localStorage.getItem("dadJokeCounter");
     } else {
         console.log('no jokes no counter!') 
     }
