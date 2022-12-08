@@ -5,45 +5,72 @@
     <meta name="google" content="notranslate" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck Norris Versus</title>
+    <title>Document</title>
     <script defer src="assets/javascript/script.js"></script>
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
 
-</head>
-<body>
-    <header id="header">
-      <h1>Chuck Norris v Your Dad</h1>
-    </header>
+<body class="grey darken-3">
+
+    <header>
+      <h1 class="center-align">CHUCK NORRIS v YOUR DAD</h1>
+    </header> 
+
+    <!-- materialize padding -->
+    <div class="section"></div>
+
     <article id="box-container" class="container">
+      
+      <div class="row">
         <section id="chuck-norris">
-          
-            <!-- <div id="chuck-joke" class="row"> -->
-                <div class="col s12 m5">
-                  <div class="card-panel small orange darken-3">
-                    <span id="chuck-joke" class="white-text">
-                  </div>
-                </div>
-              <!-- </div> -->
-        
-          <button  class="btn-floating btn-large pulse"><i id="chuck-vote" class="material-icons">check</i></button>
-        </section>
-        <section id="your-dad">
-            
-                <!-- <div id="dad-joke" class="row"> -->
-                    <div class="col s12 m5">
-                      <div class="card-panel small orange darken-3">
-                        <span id="dad-joke" class="white-text">
-                        </span>
-                      </div>
-                    </div>
-                  <!-- </div>
-             -->
-            <button class="btn-floating btn-large pulse"><i id="dad-vote" class="material-icons">check</i></button>
-          </section>
+            <div class="card-panel small orange accent-3 col s5 valign-center">
+              <span id="chuck-joke" class="flow-text text-grey darken-3 center-align">
+            </div>
+                
+        <!-- materialize padding -->
+        <div class="section col s2"></div>
         </section>
 
-      <a href="results.html" class="btn-floating">Grab your favorite jokes here!</a>
+        <section id="your-dad">   
+            <div class="card-panel small orange accent-3 col s5 valign-center">
+              <span id="dad-joke" class="flow-text text-grey darken-3 center-align">
+            </div>
+          
+           <!-- materialize padding -->
+          <div class="section"></div>
+
+        </div>
+        </section>
+
+
+               <!-- materialize padding -->
+             <div class="section"></div>
+             
+        <div class ="row">
+            <div class="col s2 section"></div>
+
+            <button class="col 1 btn-floating btn-large pulse"><i id="chuck-vote" class="material-icons">check</i></button>
+
+            <div class="col s6 section"></div>
+
+            <button class="col 1 btn-floating btn-large pulse"><i id="dad-vote" class="material-icons">check</i></button>
+
+            <div class="col s2 section"></div>
+        </div>
+         
+        <!-- materialize padding -->
+        <div class="section"></div>
+     
+        <div class="row">
+          <div class="col s2 section"></div>
+      <a href="results.html" class="btn-large"><i id="favorite-jokes" class="material-icons right">favorite</i>Grab your favorite jokes here!</a>
+      <div class="col s2 section"></div>
+      </div>
     </article>
+
+
 </body>
 </html>
