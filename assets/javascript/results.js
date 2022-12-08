@@ -6,6 +6,7 @@ let dadCounterContainer = document.getElementById('dad-counter-container')
 let clearJokesButton = document.getElementById('clear-jokes-btn');
 let resultsContainerFull = document.getElementById('results-container-full');
 let noJokesSaved = document.getElementById('no-jokes-saved');
+let scoreCardContainer = document.getElementById('score-card')
 
 
 const displayJokesList = () => {
@@ -28,12 +29,23 @@ const displayJokesList = () => {
         }
 
     }
+    let chuckCount = localStorage.getItem('chuckJokeCounter');
+    let dadCount = localStorage.getItem("dadJokeCounter");
+    if (chuckCount === null){
+        chuckCount = 0; 
+    }
+    if (dadCount === null){
+        dadCount = 0; 
+    }
 
-    if(localStorage.getItem('chuckJokeCounter')  && localStorage.getItem("dadJokeCounter")) {
-        chuckCounterContainer.textContent = "Chuck Norris Jokes: " + localStorage.getItem('chuckJokeCounter');
-        dadCounterContainer.textContent = "Dad Jokes: " + localStorage.getItem("dadJokeCounter");
-    } else {
+
+    if(chuckCount === 0  && dadCount === 0) {
+        scoreCardContainer.style.display = "none";
         console.log('no jokes no counter!') 
+    } else {
+        scoreCardContainer.style.display = "block"; 
+        chuckCounterContainer.textContent = "Chuck Norris Jokes: " + chuckCount;
+        dadCounterContainer.textContent = "Dad Jokes: " + dadCount;
     }
     
 
