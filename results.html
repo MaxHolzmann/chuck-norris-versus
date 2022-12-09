@@ -11,28 +11,37 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="grey darken-2">
 
-    <header>
-        <a href="index.html">Home</a>
+    <header class="container left-align">
+        <a class="home-text" href="index.html">Home</a>
     </header>
 
-    <div class="container center-align">
-        <h5 id="chuck-counter-container"></h5>
-        <h5 id="dad-counter-container"></h5>
-    </div>
-
-    <div id="results-container-full" class="col s10 m7 center-align">
-        <h2 class="header">Saved Jokes</h2>
-        <div class="card horizontal  amber lighten-5  round-border">
-          <div class="card-stacked">
-            <div class="card-content">
-              <p class="saved-joke-text" id="results"></p>
-            </div>
+    <div id="score-card" class="row">
+        <div class="col m3 l4 xl"></div>
+        <div class="col s12 m6 l4 xl4">
+        <h3 class="center-align">Score Card</h3>
+          <div class="card-panel orange darken-1 center-align">
+            <h5 id="chuck-counter-container"></h5>
+            <h5 id="dad-counter-container"></h5>
+            </span>
           </div>
         </div>
-        <a id="clear-jokes-btn" class="waves-effect waves-light btn-large hoverable amber lighten-5 black-text"><i class="material-icons left">clear</i>Clear Saved Jokes</a>
       </div>
+
+      <div id="results-container-full" class="row center-align">
+        <h2 class="header">Saved Jokes</h2>
+        <div class="col m1 l2 xl3"></div>
+        <div class="col s12 m10 l8 xl6">
+          <div class="card-panel orange darken-1 center-align">
+            <p class="saved-joke-text" id="results"></p>
+          </div>
+        </div>
+        </div>
+
+        <div class="container center-align">
+            <a id="clear-jokes-btn" class="waves-effect waves-light btn-large hoverable orange darken-1 black-text"><i class="material-icons left">clear</i>Clear Saved Jokes</a>
+        </div>
 
     <div id="no-jokes-saved" class="container center-align">
         <h1>You have not saved any jokes!</h1>
