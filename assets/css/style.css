@@ -1,15 +1,30 @@
 
 
 .round-border {
-    border-radius: 50px;
+    border-radius: 30px;
     margin: 10px;
 }
 
 .saved-joke-text {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 20px;
 }
 
 .hide-results {
     display: none;
+}
+
+.home-text {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.home-text:hover {
+    transition: ease-in 0.2s;
+    color: white;
+}
+
+#score-card {
+    margin: 10px;
 }
