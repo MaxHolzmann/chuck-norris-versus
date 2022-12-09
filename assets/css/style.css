@@ -5,9 +5,14 @@
     margin: 10px;
 }
 
+.joke-counter {
+    transition: 0.2s ease-in-out;
+}
+
 .saved-joke-text {
     font-size: 1.3em;
     margin: 20px;
+    transition: 0.2s ease-in-out;
 }
 
 .hide-results {
@@ -21,7 +26,7 @@
 }
 
 .home-text:hover {
-    transition: ease-in 0.2s;
+    transition: 0.2s ease-in-out;
     color: white;
 }
 
