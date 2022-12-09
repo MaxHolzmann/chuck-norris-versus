@@ -21,11 +21,13 @@ const displayJokesList = () => {
         //Checks if the one item in local storage is "debug"
         if(localStorage.length === 1 && localStorage.key(0) === "debug") {
             resultsContainerFull.classList.add('hide-results');
+            clearJokesButton.classList.add('hide-results');
        }
 
        //checks if local storage is empty
        if(localStorage.length === 0) {
         resultsContainerFull.classList.add('hide-results');
+        clearJokesButton.classList.add('hide-results');
         }
 
     }
