@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
 <body class="grey darken-3">
 
     <header>
-      <h1 class="center-align">CHUCK NORRIS v YOUR DAD</h1>
+      <h1 class="center-align orange-text">CHUCK NORRIS v YOUR DAD</h1>
     </header> 
 
     <!-- materialize padding -->
@@ -25,8 +25,17 @@
     <article id="box-container" class="container">
       
       <div class="row">
+        <div class="col s1 section"></div>
+        <img src="assets/chuck01.png" alt="chuck norris" class="img col s3">        
+        <div class="col s4 section"></div>
+        <img src="assets/dad_img.png" alt="man looking down holding his glasses" class="img col s3">
+        <div class="col s1 section"></div>
+      </div>
+
+
+      <div class="row">
         <section id="chuck-norris">
-            <div class="card-panel small orange accent-3 col s5 valign-center">
+            <div class="card-panel small orange accent-3 col s5 valign-center transition">
               <span id="chuck-joke" class="flow-text text-grey darken-3 center-align">
             </div>
                 
@@ -35,7 +44,8 @@
         </section>
 
         <section id="your-dad">   
-            <div class="card-panel small orange accent-3 col s5 valign-center">
+         
+            <div class="card-panel small orange accent-3 col s5 valign-center transition">
               <span id="dad-joke" class="flow-text text-grey darken-3 center-align">
             </div>
           
@@ -44,20 +54,14 @@
 
         </div>
         </section>
-
-
                <!-- materialize padding -->
              <div class="section"></div>
              
         <div class ="row">
             <div class="col s2 section"></div>
-
             <button class="col 1 btn-floating btn-large pulse"><i id="chuck-vote" class="material-icons">check</i></button>
-
             <div class="col s6 section"></div>
-
             <button class="col 1 btn-floating btn-large pulse"><i id="dad-vote" class="material-icons">check</i></button>
-
             <div class="col s2 section"></div>
         </div>
          

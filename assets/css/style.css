@@ -33,3 +33,13 @@
 #score-card {
     margin: 10px;
 }
+
+.img {
+    max-width: 70%;
+    height: auto;
+  }
+
+.orange-text {
+    color: #ff9100;
+}
+
